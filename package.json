@@ -12,6 +12,9 @@
     "deploy": "git push heroku master"
   },
   "keywords": [],
+  "engines": {
+    "node": "14.16.0"
+  },
   "author": "Jesse Gilbride",
   "license": "MIT",
   "dependencies": {
@@ -23,6 +26,7 @@
     "morgan": "^1.9.1",
     "pg": "^8.6.0",
     "postgrator-cli": "^4.0.0",
+    "tar": "^6.1.0",
     "xss": "^1.0.3"
   },
   "devDependencies": {
