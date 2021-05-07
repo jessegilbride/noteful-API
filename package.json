@@ -2,7 +2,7 @@
   "name": "Noteful API",
   "version": "0.0.1",
   "description": "",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "mocha --require test/setup.js --watch",
     "dev": "nodemon src/server.js",
