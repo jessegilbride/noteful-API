@@ -2,19 +2,14 @@ const FolderService = {
   getFolders(db) {
     return db
       .from('folders')
-      .select(
-        'folders.id',
-        'folders.name',
-      )
+      .select('*')
   },
-  getFolderById(db, folder_id) {
+  getFolderById(db, id) {
     return db
       .from('folders')
-      .select(
-        'folders.id',
-        'folders.name',
-      )
-      .where('folder.id', folder_id)
+      .select('*')
+      // .where({ id })
+      .where('id', id)
       .first()
   },
   insertFolder(db, newFolder) {
