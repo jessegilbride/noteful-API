@@ -32,10 +32,7 @@ folderRouter
           error: { message: `Missing '${key}' in request body` }
         })
 
-    FolderService.insertFolder(
-      req.app.get('db'),
-      newFolder
-    )
+    FolderService.insertFolder(req.app.get('db'), newFolder)
       .then(folder => {
         res
           .status(201)
