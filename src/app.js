@@ -20,6 +20,9 @@ app.use(helmet())
 
 app.use(express.static('public'))
 
+app.get('/', (req, res, next) => {
+  res.redirect('/folders')
+})
 app.use('/folders', folderRouter)
 app.use('/notes', noteRouter)
 app.use(errorHandler)
